@@ -1,0 +1,54 @@
+Name:Sai Srikanth Kurumaddali
+ASU ID:1215326398
+
+Computer Architecture-2 Assignment 01
+Memory Hierarchy and access time
+
+Instructions to execute and obtain the access for linear read, linear write , random read and random write memory access patterns
+
+The given folder contains source files,Makefile and report
+To obtain the access times for the following access patterns-
+
+1)Linear read
+i)Open the terminal and type 'make all' and get the executable from the Makefile
+ii)Type'./linearread' in the terminal to execute the linear read access pattern
+iii)Type the size of cache required to obtain access time of in multiples of 1024 as the smallest size that can fit in is 1kB.
+iv)The time is obtained for each size from the size specified to the lowest size.
+v)Type './linearread > linearread.txt' to transfer the output to a text file.
+vi) Use Matlab or LibreOffice to plot the access time graph from the data obtained
+
+2)Linear write
+i)Open the terminal and type 'make all' and get the executable from the Makefile
+ii)Type'./mountain' in the terminal to execute the linear read access pattern
+iii)Type the size of cache required to obtain access time of in multiples of 1024 as the smallest size that can fit in is 1kB.
+iv)The time is obtained for each size from the size specified to the lowest size.
+v)Type './mountain > mountain.txt' to transfer the output to a text file.
+vi) Use Matlab or LibreOffice to plot the access time graph from the data obtained.
+
+3)Random read
+i)Open the terminal and type 'make all' and get the executable from the Makefile
+ii)Type'./randomread' in the terminal to execute the linear read access pattern
+iii)Type the size of cache required to obtain access time of in multiples of 1024 as the smallest size that can fit in is 1kB.
+iv)The time is obtained for each size.
+v)Run the program multiple times using different cache sizes.
+v)Type './randomread > randomread.txt' to transfer the output to a text file for each cache size.
+vi) Use Matlab or LibreOffice to plot the access time graph from the data obtained
+
+3)Random write
+i)Open the terminal and type 'make all' and get the executable from the Makefile
+ii)Type'./random' in the terminal to execute the linear read access pattern
+iii)Type the size of cache required to obtain access time of in multiples of 1024 as the smallest size that can fit in is 1kB.
+iv)The time is obtained for each size.
+v)Run the program multiple times using different cache sizes.
+v)Type './randomr > random.txt' to transfer the output to a text file for each cache size.
+vi) Use Matlab or LibreOffice to plot the access time graph from the data obtained
+
+GEM5 Instructions
+1)Install the Gem5 package and all other dependencies required to run Gem5.
+2)Type '/build/X86/gem5.opt --outdir=tests configs/example/se.py --cpu-type=DerivO3CPU --caches --l1i_size=32kB --l1d_size=64kB --l2cache --l2_size=256kB -c tests/test-progs/hello/bin/x86/linux/hello' to set the Simulator CPU Parameters.
+3)Run your program on the gem5 simulator
+4)Type 'cd m5out' and open the stats.txt folder.
+5)Note down the sim seconds or sim ticks.
+6)Run your program by on GEM% commenting out the read or write part of the linear or random program.
+7)Open stats.txt and note down the sim seconds and sim ticks again.
+8)Find the difference and divide it by the number of iterations to obtain average access time.
